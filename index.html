@@ -172,149 +172,30 @@
             <div class="timeline-region region-france">🇫🇷 France</div>
         </div>
 
-        <section class="timeline" aria-label="Historical timeline comparing Ghana and France">
+        <section id="container" class="timeline" aria-label="Historical timeline comparing Ghana and France">
+        <script>
+            fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('container');
+                
+                data.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'timeline-item';
+                div.role = "article";
 
-            <!-- 4th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-300">
-                <div class="card" id="century-300">
-                    <h3>4th Century (300s)</h3>
-                    <p>Early trade networks and regional kingdoms establish foundational exchange systems across West African routes.</p>
-                </div>
-            </div>
-
-            <!-- 5th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-400">
-                <div class="card" id="century-400">
-                    <h3>5th Century (400s)</h3>
-                    <p>Roman decline; early monastic centers become focal points for preserving classical knowledge.</p>
-                </div>
-            </div>
-
-            <!-- 6th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-500">
-                <div class="card" id="century-500">
-                    <h3>6th Century (500s)</h3>
-                    <p>Gold trade expands; oral traditions maintain sophisticated administrative and technical knowledge systems.</p>
-                </div>
-            </div>
-
-            <!-- 7th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-600">
-                <div class="card" id="century-600">
-                    <h3>7th Century (600s)</h3>
-                    <p>Merovingian scriptoria emerge; monks copy and preserve texts in isolated monastic communities.</p>
-                </div>
-            </div>
-
-            <!-- 8th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-700">
-                <div class="card" id="century-700">
-                    <h3>8th Century (700s)</h3>
-                    <p>Trans-Saharan trade routes flourish; knowledge of astronomy, mathematics, and crafts spreads rapidly.</p>
-                </div>
-            </div>
-
-            <!-- 9th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-800">
-                <div class="card" id="century-800">
-                    <h3>9th Century (800s)</h3>
-                    <p>Charlemagne's renaissance; cathedral schools and manuscript production increase scholarly activity.</p>
-                </div>
-            </div>
-
-            <!-- 10th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-900">
-                <div class="card" id="century-900">
-                    <h3>10th Century (900s)</h3>
-                    <p>Mali and Ghana empires establish centers of learning; scholars and merchants exchange ideas across continents.</p>
-                </div>
-            </div>
-
-            <!-- 11th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-1000">
-                <div class="card" id="century-1000">
-                    <h3>11th Century (1000s)</h3>
-                    <p>Early universities form; intellectual exchange strengthens through pilgrimage and trade networks.</p>
-                </div>
-            </div>
-
-            <!-- 12th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-1100">
-                <div class="card" id="century-1100">
-                    <h3>12th Century (1100s)</h3>
-                    <p>Timbuktu emerges as a major intellectual hub; Islamic scholarship flourishes across West Africa.</p>
-                </div>
-            </div>
-
-            <!-- 13th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-1200">
-                <div class="card" id="century-1200">
-                    <h3>13th Century (1200s)</h3>
-                    <p>Sorbonne founded; scholasticism peaks; translation movements connect European and Islamic knowledge.</p>
-                </div>
-            </div>
-
-            <!-- 14th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-1300">
-                <div class="card" id="century-1300">
-                    <h3>14th Century (1300s)</h3>
-                    <p>Mali's golden age; universities in Timbuktu attract scholars from across Africa and beyond.</p>
-                </div>
-            </div>
-
-            <!-- 15th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-1400">
-                <div class="card" id="century-1400">
-                    <h3>15th Century (1400s)</h3>
-                    <p>Gutenberg's press invented; Renaissance begins; manuscript culture transitions to print.</p>
-                </div>
-            </div>
-
-            <!-- 16th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-1500">
-                <div class="card" id="century-1500">
-                    <h3>16th Century (1500s)</h3>
-                    <p>Atlantic trade begins; knowledge systems adapt; oral traditions remain primary scholarly method.</p>
-                </div>
-            </div>
-
-            <!-- 17th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-1600">
-                <div class="card" id="century-1600">
-                    <h3>17th Century (1600s)</h3>
-                    <p>Academies and salons flourish; scientific societies emerge; peer review systems formalize.</p>
-                </div>
-            </div>
-
-            <!-- 18th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-1700">
-                <div class="card" id="century-1700">
-                    <h3>18th Century (1700s)</h3>
-                    <p>Trade intensifies; knowledge exchanges accelerate through merchant networks and diplomacy.</p>
-                </div>
-            </div>
-
-            <!-- 19th Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-1800">
-                <div class="card" id="century-1800">
-                    <h3>19th Century (1800s)</h3>
-                    <p>Industrial revolution; mass printing; encyclopedias and periodicals democratize knowledge access.</p>
-                </div>
-            </div>
-
-            <!-- 20th Century -->
-            <div class="timeline-item ghana" role="article" aria-labelledby="century-1900">
-                <div class="card" id="century-1900">
-                    <h3>20th Century (1900s)</h3>
-                    <p>Independence movements; universities established; African scholarship gains global recognition.</p>
-                </div>
-            </div>
-
-            <!-- 21st Century -->
-            <div class="timeline-item france" role="article" aria-labelledby="century-2000">
-                <div class="card" id="century-2000">
-                    <h3>21st Century (2000s — Present)</h3>
-                    <p>Digital revolution; online platforms enable real-time global collaboration and instant knowledge sharing.</p>
-                </div>
-            </div>
+                div.innerHTML = `
+                    <div class="card">
+                        <h3>${item.year}</h3>
+                        <p>${item.description}</p>
+                    </div>
+                `;
+                container.appendChild(div);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('container').textContent = 'Failed to load data';
+            });
+        </script>
         </section>
