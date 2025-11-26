@@ -1,0 +1,21 @@
+[
+  {
+    "title": "French Revolution",
+    "year": 1789,
+    "description": "Heads rolled....ouch",
+    "country": "fr"
+  },
+  {
+    "title": "Ghanian independence",
+    "year": 1957,
+    "description": "Get out brits",
+    "country": "gh"
+  },
+  {
+    "title": "Great Ghana Empire Boom",
+    "year": 400,
+    "date-label": "4th Century",
+    "description": "Get out brits",
+    "country": "gh"
+  }
+]
